@@ -44,13 +44,12 @@ body{
 .container-body .main-video-container .main-vid-title{
    font-size: 20px;
    color:#444;
+   padding-left: 10px;
 }
 
 .container-body .video-list-container{
    flex:1 1 250px;
    height: 100vh;
-   overflow-y: scroll;
-   border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0,0,0,.1);
    background-color: #004D5E;
    padding:15px;
@@ -151,13 +150,16 @@ body{
 
 @media (max-width:450px){
 
+   .container-body .main-video-container {
+     padding: 10px;
+   }
+
    .container-body .main-video-container .main-vid-title{
       font-size: 15px;
       text-align: center;
    }
 
    .container-body .video-list-container .list{
-      flex-flow: column;
       gap:10px;
    }
 
@@ -167,7 +169,6 @@ body{
 
    .container-body .video-list-container .list .list-title{
       font-size: 15px;
-      text-align: center;
    }
 
 }
